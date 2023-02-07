@@ -1,0 +1,185 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body{
+    margin: 0;
+}
+p{
+    color: hsl(0, 0%, 81%);
+}
+/* ////// Start all box style ////// */
+.parent  header{
+    display: flex;
+    flex-wrap:wrap ;
+    align-items: center;
+}
+.parent header img{
+    border-radius: 50%;
+    border: 3px solid #a17ed0;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+}
+.parent  header .text{
+    line-height: .5;
+    font-size: 15px;
+}
+.parent header .text p:first-child{
+    color: white;
+}
+.parent .body p:first-child{
+    color: white;
+    font-size:21px ;
+}
+/* ////// End all box style ////// */
+
+.parent{
+    display: grid;
+    gap: 50px;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0;
+    background-color: #EDF2F8;
+}
+
+/* Media for small screen and medium  */
+@media (min-width: 0px) {
+    .parent{
+        grid-template-columns: repeat(1,auto);
+        grid-template-rows: repeat(1,auto);
+    }
+}
+/* Media for small screen and medium  */
+
+
+/* Media for large screnn  */
+
+@media (min-width: 993px) {
+    .parent{
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+
+    .parent .frist_box{
+        grid-area: 1/1/2/3;
+    }
+
+    .parent .third_box{
+        grid-area: 2/2/2/4;
+    }
+    .parent .five_box{
+        grid-area: 1/4/3/4;
+    }
+}
+
+/* Media for large screnn  */
+
+
+
+/* Start frist_box */
+.parent .frist_box{
+    background-color: #733FC8;
+    padding: 20px;
+    position: relative;
+    border-radius: 10px;
+}
+.parent .frist_box .qouta img{
+    position: absolute;
+    right: 100px;
+    opacity: .5;
+    top: 0;
+}
+
+/* End frist_box */
+
+/* Start second_box */
+
+.parent .second_box{
+    background-color: #49556B;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* End second_box */
+
+/* Start third_box */
+
+.parent .third_box{
+    background-color: #1B2330;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* End third_box */
+
+/* Start four_box */
+
+.parent .four_box{
+    background-color: #FDFDFD;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.parent .four_box header img{
+    border-radius: 50%;
+    border: none;
+}
+
+/* for text style */
+
+/* Seconde_header */
+
+.parent .four_box header .text p:last-child{
+    color: black;
+    opacity: 50%;
+}
+
+/* Seconde_header */
+
+.parent .four_box .body p:first-child{
+    color: black;
+}
+
+.parent .four_box .body p:last-child{
+    color: black;
+    opacity: 50%;
+}
+
+/* for text style */
+
+/* End four_box */
+
+/* Start five_box */
+
+
+.parent .five_box{
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+}
+.parent .five_box header img{
+    border-radius: 50%;
+    border: none;
+}
+.parent .five_box header .text p:first-child{
+    color: black;
+}
+.parent .five_box header .text p:last-child{
+    color: black;
+    opacity: 50%;
+}
+.parent .five_box .body p:first-child{
+    color: black;
+}
+
+.parent .five_box .body p:last-child{
+    color: black;
+    opacity: 50%;
+}
+
+/* End five_box */
+
+/* ////// Thanks For Your Feedback //////  */
